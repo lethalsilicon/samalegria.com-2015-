@@ -1,0 +1,59 @@
+body{
+	background: #d2feff;
+	font-family: 'VT323', Arial;
+	font-size: 18px;
+}
+h1{
+	margin-bottom: 0;
+}
+h1 span{
+	font-size: 18px;
+}
+p{
+	margin-bottom: 0px;
+	
+}
+a{
+	color: #8dd0ce;
+}
+a:hover{
+	color: #edb6ef;
+	text-decoration: none;
+	border-top: 1px solid #edb6ef;
+	border-bottom: 1px solid #edb6ef;
+}
+img{
+	margin-top: 20px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.social{
+	list-style: none;
+	padding: 8px 0 0 0;
+}
+
+.social li a{
+	float: left;
+	margin-right: 8px;
+	display: block;
+	width: 35px;
+	height: 35px;
+	border: none;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+	transition: all .7s;
+}
+.social li a:hover{
+	border: none;
+	-ms-transform: rotate(360deg); /* IE 9 */
+	-webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+	transform: rotate(360deg);
+}
+
+.github{background: url("../images/github.png");}
+.tumblr{background: url("../images/tumblr.png");}
+.twitter{background: url("../images/twitter.png");}
+.soundcloud{background: url("../images/soundcloud.png");}
+.linkedin{background: url("../images/linkedin.png");}
+.mail{background: url("../images/mail.png");}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <title>Sam Alegria</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The non-portfolio of Sam Alegria">
+  <meta name="keywords" content="sam alegria, ux maker, html5, user experience, 3d printing, arduino, new york city" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Sam Alegria">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="author" href="humans.txt">
+  <link rel="Shortcut Icon" type="image/ico" href="images/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen,projection">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen,projection">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen,projection">
+  <link rel="canonical" href="http://samalegria.com/" />
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+  <!--[if IE 8]><link rel="stylesheet" href="css/ie/ie8.css" type="text/css" media="screen"><![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/style.js"></script>
+
+</head>
+<body>
+  <div style="margin-top: 10%" class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <h1>Hello! I'm Sam <span>¯\_(ツ)_/¯</span></h1>
+      <p>I grew up watching <a href="https://www.youtube.com/watch?v=B13JVSHYfOM" target="_blank">cartoons</a></p>
+      <p>This is <a href="https://instagram.com/p/pzdZcPShc8/?taken-by=samalegria" target="_blank">me with the Angry Video Game Nerd</a></p>
+      <p>I went to the <a href="https://www.artinstitutes.edu/san-francisco" target="_blank">Art Institute - SF</a></p>
+      <p>I work @ <a href="http://www.gartner.com/technology/home.jsp" target="_blank">Gartner</a> in Connecticut</p>
+      <p>My partner in crime is <a href="https://instagram.com/taintedsweets/" target="_blank">Tainted Sweets</a></p>
+      <p>I've been <a href="https://instagram.com/basicallypoor/" target="_blank">posting snaps of my toys</a></p>
+    </div>
+    <div class="col-md-4">
+      <img src="images/profile.png"/ title="This is a photograph of what I look like. I'm handsome.">
+      <ul class="social clearfix">
+        <li><a class="github" title="I put code here when I remember" href="https://github.com/lethalsilicon" target="_blank"></a></li>
+        <li><a class="tumblr" title="My blog about the trash I like" href="http://samalegria.tumblr.com/" target="_blank"></a></li>
+        <li><a class="twitter" title="I use this when I try to talk to Anna Kendrick" href="https://twitter.com/SamAlegria" target="_blank"></a></li>
+        <li><a class="soundcloud" title="The cool jams I've been listening to" href="https://soundcloud.com/you/likes" target="_blank"></a></li>
+        <li><a class="linkedin" title="Where I try to look professional" href="https://www.linkedin.com/in/samalegria" target="_blank"></a></li>
+        <li><a class="mail" title="Email me!" href="mailto:hello@samalegria.com" target="_blank"></a></li>
+      </ul>
+    </div>
+  </div><!--END: row-->
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+/******************************************
+* Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
+* Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
+* Last updated Nov 9th, 05' by DD. This notice must stay intact for use
+******************************************/
+
+  // THE GREEN URL BELOW IS WHERE YOU PUT THE URL OF THE IMAGE YOU WANT TO REPLACE THE SNOWFLAKES WITH
+  var snowsrc="http://oi61.tinypic.com/11scuja.jpg"
+  //image courtesy of http://inuinu.com buy all their stuff!!!
+  // YOU CAN CHANGE THE YELLOW 10 BELOW TO HOW MANY SNOWFLAKES YOU WANT TO BE ON YOUR BLOG
+  var no = 6;
+  // Snow will disappear after __ seconds
+  var hidesnowtime = 0;
+  // How much snow should will drop down before fading: either "windowheight" or "pageheight"
+  var snowdistance = "windowheight";
+
+///////////Stop Config//////////////////////////////////
+
+var ie4up = (document.all) ? 1 : 0;
+var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+function iecompattest(){
+  return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600;
+
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow.gif" : snowsrc
+  for (i = 0; i < no; ++ i) {
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+    if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://loquitoslindos.tumblr.com/\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+    doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 40);
+  }
+
+  function hidesnow(){
+    if (window.snowtimer) clearTimeout(snowtimer)
+      for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+    }
+
+
+  if (ie4up||ns6up){
+    snowIE_NS6();
+    if (hidesnowtime>0)
+      setTimeout("hidesnow()", hidesnowtime*1000)
+  }
+
+
+
+
+</script>
